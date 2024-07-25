@@ -23,31 +23,26 @@
             </div>
             
             <div id="blocks-container">
-
                 <div class="info-block">
                     <form id="search-form">
-                        <div>
-                            <div class="input-group">
-                                <input type="text" id="departure" name="departure" placeholder="Ville de départ" required>
-                                <input type="text" id="arrival" name="arrival" placeholder="Ville d'arrivée" required>
-                                
-                                <input type="date" id="date" name="date" required>
-                            </div>
+                        <div class="input-group">
+                            <input type="text" id="departure" name="departure" placeholder="Ville de départ" required aria-label="Ville de départ">
+                            <input type="text" id="arrival" name="arrival" placeholder="Ville d'arrivée" required aria-label="Ville d'arrivée">
+                            <input type="date" id="date" name="date" required aria-label="Date de départ">
                         </div>
-                        
-                        <button type="submit">Recherche</button>                        
+                        <button type="submit">Recherche</button>
                     </form>
                 </div>
-
+            
                 <div class="info-block" id="train-results">
                     <img src="/images/1200px-Logo_des_trains_grandes_lignes.png" alt="Logo des trains grandes lignes">
                     <p>C'est l'heure de réserver votre prochain voyage.</p>
                 </div>
-            </div>
             
-            <div id="error-container">
-                <img src="/images/6325254.jpg" alt="Image 404" id="error-image">
-                <p id="text-error">Aucun voyage trouvé.</p>
+                <div id="error-container" class="info-block">
+                    <img src="/images/6325254.jpg" alt="Image 404" id="error-image">
+                    <p id="text-error">Aucun voyage trouvé.</p>
+                </div>
             </div>
 
         </div>
