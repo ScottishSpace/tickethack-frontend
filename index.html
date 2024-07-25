@@ -1,48 +1,59 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Tickethack Train</title>
+    <title>Tickethack Reservation</title>
 </head>
+
 <body>
+
     <header>
         <h1>Tickethack</h1>
 
     </header>
-        <div class="container">
 
-            <div class="bloc_text">
+    <main>
+        <div class="container">
+            <div class="text-ticket">
                 <p>Explorez le monde sans effort avec le train</p>
                 <p>Comparez, réservez et profitez de petits prix pour vos billets de train : Votre journée commence sur Tickethack.</p>
             </div>
             
-            <div class="block-container">
-                
-                <div id="train-search">
-                    <form>
-                        <div class="group">
+            <div id="blocks-container">
+
+                <div class="info-block">
+                    <form id="search-form">
+                        <div>
                             <div class="input-group">
                                 <input type="text" id="departure" name="departure" placeholder="Ville de départ" required>
                                 <input type="text" id="arrival" name="arrival" placeholder="Ville d'arrivée" required>
-                            </div>
-                        </div>
-                        <div class="group">
-                            <div class="input-group date-group">
+                                
                                 <input type="date" id="date" name="date" required>
                             </div>
                         </div>
-                        <button type="submit">Recherche</button>
+                        
+                        <button type="submit">Recherche</button>                        
                     </form>
                 </div>
 
-                <div id="train-results">
-                    <img src="./1200px-Logo_des_trains_grandes_lignes.png" alt="Logo des trains grandes lignes">
+                <div class="info-block" id="train-results">
+                    <img src="/images/Logo_des_trains_grandes_lignes.png" alt="Logo des trains grandes lignes">
                     <p>C'est l'heure de réserver votre prochain voyage.</p>
                 </div>
-
             </div>
+            
+            <div id="error-container">
+                <img src="/images/6325254.jpg" alt="Image 404" id="error-image">
+                <p id="text-error">Aucun voyage trouvé.</p>
+            </div>
+
         </div>
+    </main>
+
+    <!-- <script src="script.js"></script> -->
 </body>
+
 </html>
